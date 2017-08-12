@@ -18,6 +18,6 @@ from command line:
 
 > conda env create -f race-vision.env
 
-> source activate race-vision
+> source activate race-vision  # Omit "source" if on windows
 
 > jupyter notebook 
