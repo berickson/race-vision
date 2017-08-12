@@ -10,9 +10,11 @@ Jupyter notebooks to evaluate different vision algorithms for the Sparkfun AVC c
 
 clone repo
 
-install Anaconda
+install [Anaconda](https://www.continuum.io/downloads)
 
 from command line:
+
+> cd car-vision
 
 > conda env create -f race-vision.env
 
