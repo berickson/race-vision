@@ -3,7 +3,7 @@
 Jupyter notebooks to evaluate different vision algorithms for the Sparkfun AVC competition.
 
 ## Notebooks
-[Find Red Barrels](https://nbviewer.jupyter.org/github/berickson/race-vision/blob/master/Find%20Red%20Barrels.ipynb)
+[Find Red Barrels](Find%20Red%20Barrels.ipynb)
 
 
 ## Setup for Hacking
