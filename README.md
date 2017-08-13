@@ -1,8 +1,23 @@
 # race-vision
-## Setup
+
+Jupyter notebooks to evaluate different vision algorithms for the Sparkfun AVC competition.
+
+## Notebooks
+[Find Red Barrels](Find%20Red%20Barrels.ipynb)
+
+
+## Setup for Hacking
+
 clone repo
-install Anaconda
+
+install [Anaconda](https://www.continuum.io/downloads)
+
 from command line:
+
+> cd car-vision
+
 > conda env create -f race-vision.env
-> source activate race-vision
+
+> source activate race-vision  # Omit "source" if on windows
+
 > jupyter notebook 
