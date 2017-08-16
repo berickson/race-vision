@@ -9,7 +9,28 @@ import glob
 from IPython import display
 import os
 
+def show(images):
+    '''
+    displays a list of images
 
+    Parameters
+    ----------
+    images : list of opencv images, rgb or grayscale
+    '''
+    if type(images) is np.ndarray:
+        images = [images]
+    l = len(images)
+    fig = plt.figure()
+    fig.set_size_inches(20,20)
+    for i,image in enumerate(images):
+        fig.add_subplot(1, l, i+1)
+        if len(image.shape) == 3:
+            plt.imshow(image)
+        else:
+            plt.imshow(image, cmap='gray')
+          
+    plt.show()
+    
 def display_images(image_paths, columns=1,width=800,title=None,headings=None,show_filenames=True):
     '''
     displays table of images given by list of image_paths in the Jupyter notebook
@@ -55,13 +76,13 @@ def video_tag(path,width=300,height=240,title=""):
     generates an HTML fragmentfor displaying the video in path in the notebook
     '''
     return """
-    <div style="float:left;padding-left:5px">
-    <p>{3}</p>
-    <video width="{1}" height="{2}" controls>
-      <source src="{0}" type="video/mp4">
-    </video>
-    </div>
-    """.format(path,width,height,title)
+        <div style="float:left;padding-left:5px">
+        <p>{3}</p>
+        <video width="{1}" height="{2}" controls>
+          <source src="{0}" type="video/mp4">
+        </video>
+        </div>
+        """.format(path,width,height,title)
 
 def display_video(video_path, **kwargs):
     html = video_tag(video_path, title=video_path, **kwargs)
