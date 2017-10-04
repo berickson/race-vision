@@ -4,6 +4,7 @@ Jupyter notebooks to evaluate different vision algorithms for the Sparkfun AVC c
 
 ## Notebooks
 [Find Red Barrels](Find%20Red%20Barrels.ipynb)
+[Stereo Camera Calibratoin](stereo-calibration.ipynb)
 
 
 ## Setup for Hacking
